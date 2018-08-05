@@ -1,0 +1,56 @@
+
+:root{
+    /*below is a taste of css variables*/
+    --primaryColor-back: #1e90ff;
+}
+@media (max-width 350px) {
+    :root{
+        --primaryColor-back: #45678a;
+    }
+}
+body{
+    margin: 20px;
+    padding: 20px;
+    border: 5px dashed steelblue;
+
+}
+h1 {
+    color: #1e90ff;
+    font-family: Lobster, monospace;
+}
+#beerLike{
+    width: 500px;
+    background-color: var(--primaryColor-back, grey);
+    padding: 1.5em;
+    margin: 20px;
+}
+[type~='checkbox'] {
+    margin: 20px;
+}
+
+.smaller-image {
+    width: 200px;
+}
+.thin-red-border {
+    border-color: rgb(255, 165, 0);
+    border-width: 5px;    
+    border-style: solid;
+    width: 500px;
+    padding: 20px;
+    margin: -15px;
+}
+.thick-green-border {
+    border: 10px solid #0f0;
+    border-radius: 50%;
+}
+.beerAttr {
+    width: 500px;
+    background-color: silver;
+    padding: 20px;
+    margin: 20px;
+}
+.boxShadow{
+    -moz-box-shadow:    3px 4px 5px 1px #011b38;
+    -webkit-box-shadow: 3px 4px 5px 1px #011b38;
+    box-shadow:         3px 4px 5px 1px #011b38;
+}

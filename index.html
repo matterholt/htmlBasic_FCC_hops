@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic HTML FCC</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <h1>Craft beer</h1>
+    <h2 class="thin-red-border">Casscade Hops</h2>
+    <main>
+        <p>click here to view other <a href="#">hops</a></p>
+        <a href="#"> <img class= "smaller-image thick-green-border boxShadow" src="image/Cascade.jpg" alt="casscade hops on a vine"></a>
+
+        <div class= "beerAttr boxShadow">
+            <h2>Hop attributes</h2>
+            <ul>
+                <li>moderate bitterness level</li>
+                <li> flowery aroma</li>
+                <li>aroma-type cultivar</li>
+            </ul>
+    
+            <p>Most used in these beers</p>
+            <ol>
+                <li>Liberty IPA | Anchor Brewing</li>
+                <li>Sierra Nevada Pale Ale | Sierra Nevada Brewing Company</li>
+                <li>Mirror Pond Pale Ale | Deschutes Brewery</li>
+            </ol>
+        </div>
+
+        <form id="beerLike" class="boxShadow" action="/submit-favorite-beer">
+
+            <h3>Beer types</h3>
+            <label for=""><input type="radio" name="beerType" checked> Lager</label>
+            <label for=""><input type="radio" name="beerType"> Ale</label>
+            <label for=""><input type="radio" name="beerType"> Stout</label>
+            <label for=""><input type="radio" name="beerType"> Porter</label>
+            <label for=""><input type="radio" name="beerType"> IPA</label> <br>
+            
+            <h3>Beer Attibutes</h3>
+            <label for=""><input type="checkbox" name="beerAttr">Hoppy</label>
+            <label for=""><input type="checkbox" name="beerAttr">High ABV</label>
+            <label for=""><input type="checkbox" name="beerAttr">Heavy</label>
+            <label for=""><input type="checkbox" name="beerAttr">Aged</label>
+
+            <h3>Other comments</h3>
+            <input type="text" placeholder="comments" required>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    
+    </main>
+</body>
+</html>
