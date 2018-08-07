@@ -1,9 +1,10 @@
 
+
 :root{
     /*below is a taste of css variables*/
     --primaryColor-back: #1e90ff;
 }
-@media (max-width 350px) {
+@media (max-width: 350px) {
     :root{
         --primaryColor-back: #45678a;
     }
@@ -18,12 +19,14 @@ h1 {
     color: #1e90ff;
     font-family: Lobster, monospace;
 }
+
 #beerLike{
     width: 500px;
     background-color: var(--primaryColor-back, grey);
     padding: 1.5em;
     margin: 20px;
 }
+
 [type~='checkbox'] {
     margin: 20px;
 }
@@ -48,6 +51,13 @@ h1 {
     background-color: silver;
     padding: 20px;
     margin: 20px;
+}
+.beerAttr h2 {
+    text-align: center;
+    height: 50px;
+}
+.beerAttr p {
+    text-align: justify;
 }
 .boxShadow{
     -moz-box-shadow:    3px 4px 5px 1px #011b38;
