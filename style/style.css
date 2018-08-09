@@ -2,7 +2,7 @@
 
 :root{
     /*below is a taste of css variables*/
-    --primaryColor-back: #1e90ff;
+    --primaryColor-back: rgba(45,45,45,0.1);
 }
 @media (max-width: 350px) {
     :root{
